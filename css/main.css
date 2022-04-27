@@ -27,24 +27,6 @@ body {
   letter-spacing: -0.03em;
 }
 
-.overley {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, .5);
-  z-index: 50;
-  visibility: hidden;
-  opacity: 0;
-  transition: all .3s;
-}
-
-.overley--show {
-  visibility: visible;
-  opacity: 1;
-}
-
 .quick {
   display: none;
   margin-top: 15px;
@@ -1286,6 +1268,24 @@ path {
     align-items: center;
     border-radius: 50%;
     transition: all .3s;
+  }
+
+  .overley {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 50;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+  }
+
+  .overley--show {
+    visibility: visible;
+    opacity: 1;
   }
 
   .burger--on {
