@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="1300">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
@@ -15,7 +15,11 @@
 
 <body id="body">
   <div class="wrapper">
+    <div class="overley"></div>
     <header class="header">
+      <a href="#" class="burger">
+        <span></span>
+      </a>
       <div class="header__top">
         <div class="container">
           <div class="header__top-inner">
@@ -25,10 +29,10 @@
             <nav class="header__nav">
               <ul class="header__nav-list">
                 <li class="header__nav-item">
-                  <a href="/" class="header__nav-link">Home</a>
+                  <a href="#body" class="header__nav-link">Home</a>
                 </li>
                 <li class="header__nav-item">
-                  <a href="#" class="header__nav-link">About us</a>
+                  <a href="#footer" class="header__nav-link">About us</a>
                 </li>
                 <li class="header__nav-item">
                   <a href="#service" class="header__nav-link">Services</a>
@@ -42,7 +46,7 @@
               </ul>
             </nav>
             <div class="header__line"></div>
-            <div class="header__contact">
+            <a href="tel:+18002652454" class="header__contact">
               <div class="header__icon">
                 <img src="./img/header/tel-icon.svg" alt="#">
               </div>
@@ -50,14 +54,14 @@
                 <div class="header__desc-top title">Road Assistance</div>
                 <div class="header__desc-number text-bottom">1800 265 24 54</div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
       <div class="header__body">
         <div class="container">
           <div class="header__body-inner">
-            <div class="header__body__content">
+            <div class="header__body--content">
               <h1 class="header__title">Get your vehicle service done online at one place</h1>
               <div class="header__buttons">
                 <button type="button" class="header__btn button">Book a service</button>
@@ -73,6 +77,24 @@
                 <div class="header__time-block">
                   <div class="header__time-top title">We are open </div>
                   <div class="header__time-bottom text-bottom">Monday to Friday 9:00 AM to 10:00 AM</div>
+                </div>
+              </div>
+              <div class="quick">
+                <div class="header__quick-inner desca">
+                  <div class="header__quick-icon">
+                    <span class="number">24</span>
+                    <span class="size">hr</span>
+                  </div>
+                  <span class="name">Quick service</span>
+                </div>
+              </div>
+              <div class="rating">
+                <div class="header__quick-inner desca">
+                  <div class="header__rating-desc">
+                    <span class="chet">4.5/5</span>
+                    <span class="header__rating-name">Rating</span>
+                  </div>
+                  <div class="rateYo"></div>
                 </div>
               </div>
             </div>
@@ -271,7 +293,7 @@
                           </svg>
                           <span>01</span>
                         </div>
-                        <div class="follow__item-title">Get a Quote</div>
+                        <div class="follow__item-title"><span>01</span>Get a Quote</div>
                       </div>
                       <div class="follow__item-text">Through True Rich Attended does no end it his mother since real had
                         half every.
@@ -286,7 +308,7 @@
                           </svg>
                           <span>02</span>
                         </div>
-                        <div class="follow__item-title">Book an Appointment</div>
+                        <div class="follow__item-title"><span>02</span>Book an Appointment</div>
                       </div>
                       <div class="follow__item-text">Through True Rich Attended does no end it his mother since real had
                         half every.
@@ -301,7 +323,7 @@
                           </svg>
                           <span>03</span>
                         </div>
-                        <div class="follow__item-title">Get your Service Done</div>
+                        <div class="follow__item-title"><span>03</span>Get your Service Done</div>
                       </div>
                       <div class="follow__item-text follow__item-text--line-none">Through True Rich Attended does no end
                         it his mother since real
@@ -317,6 +339,16 @@
         </div>
       </section>
       <section class="main__avto avto">
+        <div class="avto__box">
+          <div class="avto__box--inner">
+            <p class="avto__box-text">
+              Get in touch with us for your service related query
+            </p>
+            <a href="#" class="avto__box-button button">
+              Contact Us
+            </a>
+          </div>
+        </div>
         <div class="avto__image-box">
           <img src="./img/avto/Image 1.jpg" alt="#">
           <img src="./img/avto/image 2.jpg" alt="ЗДЕСЬ КАРТИНКА">
@@ -349,55 +381,55 @@
       <section class="main__brands brands">
         <div class="container">
           <div class="brands__inner">
-            <h2 class="brands__title">Brands we Serve</h2>
+            <h2 class="brands__title heading">Brands we Serve</h2>
             <ul class="brands__list">
               <li class="brands__item">
-                <a href="#">
+                <a class="brands__item-link" href="#">
                   <img src="./img/logos/1.svg" alt="#">
                 </a>
               </li>
               <li class="brands__item">
-                <a href="#">
+                <a class="brands__item-link" href="#">
                   <img src="./img/logos/2.svg" alt="#">
                 </a>
               </li>
               <li class="brands__item">
-                <a href="#">
+                <a class="brands__item-link" href="#">
                   <img src="./img/logos/3.svg" alt="#">
                 </a>
               </li>
               <li class="brands__item">
-                <a href="#">
+                <a class="brands__item-link" href="#">
                   <img src="./img/logos/4.svg" alt="#">
                 </a>
               </li>
               <li class="brands__item">
-                <a href="#">
+                <a class="brands__item-link" href="#">
                   <img src="./img/logos/5.svg" alt="#">
                 </a>
               </li>
               <li class="brands__item">
-                <a href="#">
+                <a class="brands__item-link" href="#">
                   <img src="./img/logos/1.svg" alt="#">
                 </a>
               </li>
               <li class="brands__item">
-                <a href="#">
+                <a class="brands__item-link" href="#">
                   <img src="./img/logos/2.svg" alt="#">
                 </a>
               </li>
               <li class="brands__item">
-                <a href="#">
+                <a class="brands__item-link" href="#">
                   <img src="./img/logos/3.svg" alt="#">
                 </a>
               </li>
               <li class="brands__item">
-                <a href="#">
+                <a class="brands__item-link" href="#">
                   <img src="./img/logos/4.svg" alt="#">
                 </a>
               </li>
               <li class="brands__item">
-                <a href="#">
+                <a class="brands__item-link" href="#">
                   <img src="./img/logos/5.svg" alt="#">
                 </a>
               </li>
@@ -670,7 +702,7 @@
       <section class="main__asked asked">
         <div class="container">
           <div class="asked__inner">
-            <div class="asked__title">Frequently Asked Questions</div>
+            <div class="asked__title heading">Frequently Asked Questions</div>
             <ul class="asked__acc">
               <li class="asked__acc-item">
                 <a href="#" class="asked__acc-item-inner">
@@ -789,7 +821,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="footer__img-box">
         <img src="./img/footer/Image.jpg" alt="#">
       </div>
